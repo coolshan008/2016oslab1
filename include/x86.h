@@ -2,7 +2,7 @@
 #define JOS_INC_X86_H
 
 #include "include/types.h"
-#include "include/kernel/mmu.h"
+#include "include/mmu.h"
 
 #define NR_IRQ 256
 

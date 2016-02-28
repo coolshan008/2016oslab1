@@ -1,6 +1,6 @@
 #include "include/types.h"
 #include "include/string.h"
-#include "include/kernel/device/video.h"
+#include "include/video.h"
 
 /* 绘制屏幕的帧缓冲实现。
  * 在某些版本的qemu-kvm上，由于每次访问显存映射区域都会产生一次VM exit，

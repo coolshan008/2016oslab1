@@ -1,6 +1,6 @@
 #include "./include/string.h"
 #include "./include/x86.h"
-#include "./include/kernel/device/video.h"
+#include "./include/video.h"
 
 
 
