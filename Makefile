@@ -59,7 +59,7 @@ $(BOOT): $(BOOT_O)
 	$(LD) -e start -Ttext=0x7C00 -m elf_i386 -nostdlib -o $@.out $^
 	$(OBJCOPY) --strip-all --only-section=.text --output-target=binary $@.out $@
 	@rm $@.out
-	boot/genboot.pl $@
+	perl boot/genboot.pl $@
 
 $(OBJ_BOOT_DIR)/%.o: $(BOOT_DIR)/%.S
 	@mkdir -p $(OBJ_BOOT_DIR)
